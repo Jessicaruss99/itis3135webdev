@@ -42,8 +42,7 @@ a:hover
 figure
 {
 	text-align: center;
-    height: 200px;
-    width: auto;
+  
 
 }
 
@@ -57,4 +56,8 @@ nav
 {
 	text-align: center;
 }
+img {
+    width: 200px;
+    height: auto;
+  }
 
