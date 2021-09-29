@@ -85,6 +85,17 @@ tbody tr:nth-child(odd)
 {
 	background-color: rgb(234, 240, 214);
 }
+.dark{
+	background-color: #4d4646;
+	color: white;
+
+}
+.bold{
+	font-weight: bolder;
+	font-family: Calibri;
+	color: black;
+	font-size: xx-large;
+}
 
 
 
