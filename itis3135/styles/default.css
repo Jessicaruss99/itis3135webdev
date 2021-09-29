@@ -97,5 +97,10 @@ tbody tr:nth-child(odd)
 	font-size: xx-large;
 }
 
+#calc{
+	vertical-align: middle;
+	text-align: center;
+}
+
 
 
