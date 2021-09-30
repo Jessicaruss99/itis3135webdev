@@ -109,7 +109,30 @@ tbody tr:nth-child(odd)
   width: 50%;
 }
 
+.calculatorbuttons{
 
+		box-shadow:inset 0px 1px 0px 0px #efdcfb;
+		background-color:#dfbdfa;
+		border-radius:6px;
+		border:1px solid #c584f3;
+		display:inline-block;
+		cursor:pointer;
+		color:#ffffff;
+		font-family:Arial;
+		font-size:28px;
+		font-weight:bold;
+		padding:6px 24px;
+		text-decoration:none;
+		text-shadow:0px 1px 0px #e33282;
+	}
+	.myButton:hover {
+		background-color:#bc80ea;
+	}
+	.myButton:active {
+		position:relative;
+		top:1px;
+	
+}
 
 .container {
 	max-width: 20em;
@@ -133,7 +156,7 @@ tbody tr:nth-child(odd)
   }
   
   .calculator__display {
-	background-color: #222222;
+	background-color: grey;
 	color: #fff;
 	font-size: 1.714285714em;
 	padding: 0.5em 0.75em;
@@ -173,7 +196,7 @@ tbody tr:nth-child(odd)
   }
   
   .key--equal {
-	background-image: linear-gradient(to bottom, #fe886a, #ff7033);
+	background-image: linear-gradient(to bottom, pink, pink);
 	grid-column: -2;
 	grid-row: 2 / span 4;
   }
