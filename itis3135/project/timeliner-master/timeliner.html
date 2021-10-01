@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Timeliner.js Demo</title>
+	<link rel="canonical" href="https://technotarek.com/timeliner/timeliner.html" />
+	<link rel="stylesheet" href="css/demo.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/timeliner.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="inc/colorbox.css" type="text/css" media="screen">
+</head>
+<body>
+	<div class="container">
+		<h1>Timeliner</h1>
+		<p class="lead">Working examples of the timeliner.js jquery plugin. This page features two working examples, which demonstrate several key features including expand/collapse, autostart/autoload, and multiple timelines per page. Also see the <a href="demo-future/timeliner-future.html">newer "Future" demo</a>, released along with version 2.0 of this plugin.</p>
+
+		<h2>The Civil Rights Movement 1954-1964</h2>
+
+		<p>The content used in this demo is from <a href="https://www.technotarek.com/case-studies/investigating-power">InvestigatingPower.org</a>, one of two initial places where I implemented timeliner. InvestigatingPower.org features a total of five timeliner-powered timelines covering the topics of <a href="https://investigatingpower.org/mccarthyism/" target="_blank">McCarthyism</a>, <a href="https://investigatingpower.org/civil-rights/" target="_blank">Civil Rights</a>, <a href="https://investigatingpower.org/vietnam/" target="_blank">the Vietnam War</a>, <a href="https://investigatingpower.org/watergate/" target="_blank">the Watergate Scandal</a>, <a href="https://investigatingpower.org/corporate-power/" target="_blank">Corporate Power (Tobacco)</a>, and <a href="https://investigatingpower.org/9-11/" target="_blank">Post 9/11</a>.</p>
+
+		<div id="timeline-js" class="timeline-container">
+
+			<button class="timeline-toggle">+ expand all</button>
+
+			<br class="clear">
+
+			<div class="timeline-wrapper">
+				<h2 class="milestone"><span>Concept</span></h2>
+				<dl class="timeline-series">
+					<dt id="born" class="timeline-event"><a>The idea is born</a></dt>
+					<dd class="timeline-event-content" id="bornEX">
+						<p>Two completely independent projects, one for the Institute for Educational Leadership and another for the Fund for Investigative Journalism, expressed interest in a timeline component for their website.</p>
+						<br class="clear">
+					</dd><!-- /.timeline-event-content -->
+				</dl><!-- /.timeline-series -->
+			</div><!-- /.timeline-wrapper -->
+
+			<div class="timeline-wrapper">
+				<h2 class="milestone"><span>Prototype</span></h2>
+				<dl class="timeline-series">
+					<dt id="realized" class="timeline-event"><a>The idea is realized</a></dt>
+					<dd class="timeline-event-content" id="realizedEX">
+						<p>Jquery was heating up, so it was the perfect time to put together a working prototype. I toyed around with some variations, including some horizontal ones. Ultimately, I found the vertical version, similar to the current, the most flexible.</p>
+						<br class="clear">
+					</dd><!-- /.timeline-event-content -->
+				</dl><!-- /.timeline-series -->
+			</div><!-- /.timeline-wrapper -->
+
+
+			<div class="timeline-wrapper">
+				<h2 class="milestone"><span>Initial Integrations</span></h2>
+				<dl class="timeline-series">
+					<dt id="ncld" class="timeline-event"><a>NCLD-Youth Disability History Timeline</a></dt>
+					<dd class="timeline-event-content" id="ncldEX">
+						<p>The initial working code was first launched at <a href="http://www.ncld-youth.info/index.php?id=61">http://www.ncld-youth.info/index.php?id=61</a>. This version actually has come features that I like that I never implmented in the final plugin (e.g,. century > decade > year/event).</p>
+						<br class="clear">
+					</dd><!-- /.timeline-event -->
+					<dt id="power"><a>Investigating Power's Moments of Truth Timelines</a></dt>
+					<dd class="timeline-event-content" id="powerEX">
+						<p>I really started to fine tune the code for InvestigatingPower.org. This was also the first time where all of the content was loaded via the <abbr title="content management system">CMS</abbr>, which was important given five timelines for a total of a few hundred data points.</p>
+
+							<br class="clear">
+					</dd><!-- /.timeline-event-content -->
+				</dl><!-- /.timeline-series -->
+			</div><!-- /.timeline-wrapper -->
+
+			<div class="timeline-wrapper">
+				<h2 class="milestone"><span>Open Sourced</span></h2>
+				<dl class="timeline-series">
+					<dt id="github" class="timeline-event"><a>GitHub Gets the Timeliner.js Jquery Plugin</a></dt>
+					<dd class="timeline-event-content" id="githubEX">
+						<p>I wanted to play around with GitHub. I wanted to learn some more Jquery, in particular a bit more about creating a plugin. Done.</p>
+
+							<br class="clear">
+					</dd><!-- /.timeline-event-content -->
+				</dl><!-- /.timeline-series -->
+			</div><!-- /.timeline-wrapper -->
+
+			<br class="clear">
+		</div>
+
+	</div><!-- /.container -->
+
+	<div class="container">
+		<a href="https://investigatingpower.org"><img src="https://investigatingpower.org/wp-content/themes/investigatingpower/img/logo-investigatingpower-1x.png" width="940" alt="Investigating Power" /></a>
+	</div>><!-- /.container -->
+
+	<!-- GLOBAL CORE SCRIPTS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="inc/colorbox.js"></script>
+	<script type="text/javascript" src="js/timeliner.js"></script>
+	<script>
+		$(document).ready(function() {
+			$.timeliner({});
+			$.timeliner({
+				timelineContainer: '#timeline-js',
+				timelineSectionMarker: '.milestone',
+				oneOpen: true,
+				startState: 'flat',
+				expandAllText: '+ Show All',
+				collapseAllText: '- Hide All'
+			});
+			// Colorbox Modal
+			$(".CBmodal").colorbox({inline:true, initialWidth:100, maxWidth:682, initialHeight:100, transition:"elastic",speed:750});
+		});
+	</script>
+
+</body>
+</html>
