@@ -1,4 +1,4 @@
-
+window.onload = function () {
 const calculate = (n1, operator, n2) => {
     let result = ''
     if (operator === 'add') {
@@ -66,4 +66,5 @@ const calculate = (n1, operator, n2) => {
       }
     }
   })
+}
   
