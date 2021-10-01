@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Calendars</title>
+<!--    <link rel="stylesheet" href="index.css" />-->
+    <script src="index.js"></script>
+    <link rel="canonical" href="https://technotarek.com/timeliner/timeliner.html" />
+<!--    <link rel="stylesheet" href="../3135%20project/timeliner-master/css/demo.css" type="text/css" media="screen">-->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../3135%20project/timeliner-master/css/timeliner.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="../3135%20project/timeliner-master/css/responsive.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="../3135%20project/timeliner-master/inc/colorbox.css" type="text/css" media="screen">
+    <!-- GLOBAL CORE SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../3135%20project/timeliner-master/inc/colorbox.js"></script>
+    <script type="text/javascript" src="../3135%20project/timeliner-master/js/timeliner.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.timeliner({});
+            $.timeliner({
+                timelineContainer: '#timeline-js',
+                timelineSectionMarker: '.milestone',
+                oneOpen: true,
+                startState: 'flat',
+                expandAllText: '+ Show All',
+                collapseAllText: '- Hide All'
+            });
+            // Colorbox Modal
+            $(".CBmodal").colorbox({inline:true, initialWidth:100, maxWidth:682, initialHeight:100, transition:"elastic",speed:750});
+        });
+    </script>
+</head>
+
+<body>
+<div style="text-align: center"><img src="../3135%20project/foxchapel.PNG" ></div>
+
+<div style="text-align: center">
+    <div class="topnav" >
+        <a class="active" href="index.html">Home</a>
+        <div class="subnav"><a href="aboutme.html">About Me</a></div>
+        <div class="subnav"><a href="contact.html">Contact</a></div>
+        <div class="subnav"><a href="classroomrules.html">Classroom Rules</a></div>
+
+        <div class="subnav"><a href="dailycalendars.html">Daily Calendar</a></div>
+        <div class="subnav"><a href="monthlycalendars.html">Monthly Calendar</a></div>
+
+
+        <div class="subnav"><a href="science.html">Science</a></div>
+        <div class="subnav"><a href="math.html">Math</a></div>
+        <div class="subnav"><a href="writing.html">Reading</a></div>
+    </div>
+</div>
+<div id="parent" >
+    <div id = "baby" >
+
+<h1>Daily Schedule</h1>
+
+        <div class="container">
+
+            <div id="timeline-js" class="timeline-container">
+                <button class="timeline-toggle">+ expand all</button>
+                <br class="clear">
+
+                <div class="timeline-wrapper">
+                    <h2 class="milestone"><span>8:00am - 8:30am</span></h2>
+                    <dl class="timeline-series">
+                        <dt class="timeline-event"><a>Morning Work/Tubs</a></dt>
+                        <dd class="timeline-event-content" >
+                            <p>description</p>
+                            <br class="clear">
+                        </dd><!-- /.timeline-event-content -->
+                    </dl><!-- /.timeline-series -->
+                </div><!-- /.timeline-wrapper -->
+
+                <div class="timeline-wrapper">
+                    <h2 class="milestone"><span>8:30am - 9:00am</span></h2>
+                    <dl class="timeline-series">
+                        <dt class="timeline-event"><a>Morning Meeting / Calendar / Read Aloud</a></dt>
+                        <dd class="timeline-event-content" >
+                            <p>Description</p>
+                            <br class="clear">
+                        </dd><!-- /.timeline-event-content -->
+                    </dl><!-- /.timeline-series -->
+                </div><!-- /.timeline-wrapper -->
+
+                <div class="timeline-wrapper">
+                    <h2 class="milestone"><span>9:00am - 9:30am</span></h2>
+                    <dl class="timeline-series">
+                        <dt class="timeline-event"><a>I/E</a></dt>
+                        <dd class="timeline-event-content" >
+                            <p>Description</p>
+                            <br class="clear">
+                        </dd><!-- /.timeline-event-content -->
+                    </dl><!-- /.timeline-series -->
+                </div><!-- /.timeline-wrapper -->
+
+                <div class="timeline-wrapper">
+                    <h2 class="milestone"><span>9:30am - 11:10am</span></h2>
+                    <dl class="timeline-series">
+                        <dt class="timeline-event"><a>Reading Block</a></dt>
+                        <dd class="timeline-event-content" >
+                            <p>Description</p>
+                            <br class="clear">
+                        </dd><!-- /.timeline-event-content -->
+                    </dl><!-- /.timeline-series -->
+                </div><!-- /.timeline-wrapper -->
+
+                <div class="timeline-wrapper">
+                    <h2 class="milestone"><span>11:10am - 11:50am</span></h2>
+                    <dl class="timeline-series">
+                        <dt class="timeline-event"><a>Lunch/Recess</a></dt>
+                        <dd class="timeline-event-content" >
+                            <p>Description</p>
+                            <br class="clear">
+                        </dd><!-- /.timeline-event-content -->
+                    </dl><!-- /.timeline-series -->
+                </div><!-- /.timeline-wrapper -->
+
+                <div class="timeline-wrapper">
+                    <h2 class="milestone"><span>11:50am - 12:05pm</span></h2>
+                    <dl class="timeline-series">
+                        <dt class="timeline-event"><a>Journal Writing</a></dt>
+                        <dd class="timeline-event-content" >
+                            <p>Description</p>
+                            <br class="clear">
+                        </dd><!-- /.timeline-event-content -->
+                    </dl><!-- /.timeline-series -->
+                </div><!-- /.timeline-wrapper -->
+
+                <div class="timeline-wrapper">
+                    <h2 class="milestone"><span>12:05pm - 12:50pm</span></h2>
+                    <dl class="timeline-series">
+                        <dt class="timeline-event"><a>Specials</a></dt>
+                        <dd class="timeline-event-content" >
+                            <p>Description</p>
+                            <br class="clear">
+                        </dd><!-- /.timeline-event-content -->
+                    </dl><!-- /.timeline-series -->
+                </div><!-- /.timeline-wrapper -->
+
+                <div class="timeline-wrapper">
+                    <h2 class="milestone"><span>12:50pm - 1:05pm</span></h2>
+                    <dl class="timeline-series">
+                        <dt class="timeline-event"><a>Chapter Book</a></dt>
+                        <dd class="timeline-event-content" >
+                            <p>Description</p>
+                            <br class="clear">
+                        </dd><!-- /.timeline-event-content -->
+                    </dl><!-- /.timeline-series -->
+                </div><!-- /.timeline-wrapper -->
+
+                <div class="timeline-wrapper">
+                    <h2 class="milestone"><span>1:05pm - 2:00pm</span></h2>
+                    <dl class="timeline-series">
+                        <dt class="timeline-event"><a>Math</a></dt>
+                        <dd class="timeline-event-content" >
+                            <p>Description</p>
+                            <br class="clear">
+                        </dd><!-- /.timeline-event-content -->
+                    </dl><!-- /.timeline-series -->
+                </div><!-- /.timeline-wrapper -->
+
+                <div class="timeline-wrapper">
+                    <h2 class="milestone"><span>2:00pm - 2:30pm</span></h2>
+                    <dl class="timeline-series">
+                        <dt class="timeline-event"><a>Integrated Studies</a></dt>
+                        <dd class="timeline-event-content" >
+                            <p>Description</p>
+                            <br class="clear">
+                        </dd><!-- /.timeline-event-content -->
+                    </dl><!-- /.timeline-series -->
+                </div><!-- /.timeline-wrapper -->
+
+                <div class="timeline-wrapper">
+                    <h2 class="milestone"><span>2:40pm</span></h2>
+                    <dl class="timeline-series">
+                        <dt class="timeline-event"><a>Dismissal</a></dt>
+                        <dd class="timeline-event-content" >
+                            <p>Description</p>
+                            <br class="clear">
+                        </dd><!-- /.timeline-event-content -->
+                    </dl><!-- /.timeline-series -->
+                </div><!-- /.timeline-wrapper -->
+
+
+
+
+        <br class="clear">
+    </div>
+
+</div><!-- /.container -->
+
+    </div>
+</div>
+<footer>
+    <br/>
+    <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
+    <br/>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+</footer>
+</body>
+</html>
+

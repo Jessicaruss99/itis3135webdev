@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Update Expenditure</title>
+    <link rel="stylesheet" href="Midterm.css">
+    <script src="Midterm.js"></script>
+</head>
+
+<body>
+<main>
+    <h1>Update Expenditure</h1>
+    <!--add the form-->
+    <form id="your_details" name="your_details" action="#" >
+     <h2>Enter your details</h2>
+            <label for="firstName" >Name:</label>
+            <input type="text" id="firstName" name="firstName" aria-required="true" >
+
+            <label for="email" >Email:</label>
+            <input type="email" id="email" name="email" aria-required="true" >
+
+            <input type="submit" value="Submit" class="one">
+
+    </form>
+
+    <!--add the drop-down list-->
+    <label for="days"> Choose a day:</label>
+    <select id="days" name="days">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+    </select> <br>
+
+    <!--input for expenditure-->
+    <label for="expenditure">Enter the expenditure:</label>
+    <input type="number" id="expenditure" name="expenditure" required>
+
+
+    <!--button for updating expenditure-->
+    <input type="button" id="update" value="Update" class="one">
+
+    <!--button for calculating total expenditure-->
+    <input type="button" id="total" value="Total Expenditure" class="one">
+
+    <!--text box for showing expenditure-->
+    <label for="showtotal">Total Expenditure is:</label>
+    <input type="number" id="showtotal" name="showtotal" >
+
+
+    <!--header for showing maximum exp. amount and day-->
+    <strong id="show_max">Show Maximum Expenditure Day and Amount:</strong>
+    <!--div for showing maximum exp. amount and day-->
+    <div id="showMax"></div>
+
+</main>
+<footer>
+    <br/>
+    <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
+    <br>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+</footer>
+</body>
+</html>
