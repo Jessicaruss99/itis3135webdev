@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link href="styles/default.css" rel="stylesheet" type="text/css" >
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<title>Jessica Russ, ITIS 3135, Index</title>
 </head>
 
@@ -11,7 +12,7 @@
 	<header>
 			<h1>Jessica Russ &gt;&gt; ITIS3135</h1>
 	</header>
-    <nav>
+    <!-- <nav>
 		<a href="introduction.html">Introduction</a> 
         ||
 		<a href="contract.html">Contract</a>
@@ -51,8 +52,15 @@
         <a href="#">Activity 16</a>
         ||
         <a href="project/index.html">Project</a>
-	</nav>	
-	
+	</nav>	 -->
+	<div id="nav-placeholder">
+    </div>
+    
+    <script>
+        $(function(){
+          $("#nav-placeholder").load("navigation.html");
+        });
+        </script>
 	<main>
 		<h2>Index</h2>
         <p>This is the index page of TA Jessica that contains all of her work for the class ITIS 3135. Here is a picture of her cute dog dwight</p>

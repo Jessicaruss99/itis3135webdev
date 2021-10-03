@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<link href="styles/default.css" rel="stylesheet" type="text/css" >
     <script src="scripts/activity6.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<title>Jessica Russ, ITIS 3135, Activity 6</title>
 </head>
 
@@ -11,7 +12,7 @@
 	<header>
 			<h1>Jessica Russ &gt;&gt; ITIS3135</h1>
 	</header>
-	<nav>
+	<!-- <nav>
         <a href="index.html">Index</a> 
         ||
 		<a href="introduction.html">Introduction</a> 
@@ -31,8 +32,15 @@
 		<a href="calculator_try.html">Activity 7 Try</a>
         ||
 		<a href="calculator_fcc.html">Activity 7</a>
-	</nav>		
-	
+	</nav>		 -->
+	<div id="nav-placeholder">
+    </div>
+    
+    <script>
+        $(function(){
+          $("#nav-placeholder").load("navigation.html");
+        });
+        </script>
     <main>
         <h2>Activity 6</h2>
         
