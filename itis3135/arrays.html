@@ -4,102 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <link href="styles/default.css" rel="stylesheet" type="text/css">
-    
-    <title>Jessica Russ, ITIS 3135, Activity 8</title>
-   
+
     <script src="scripts/activity8.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="scripts/navigation.js"></script>
+
+    <title>Jessica Russ, ITIS 3135, Activity 8</title>
 
 </head>
 
 <body>
     <header>
-        <h1>Jessica Russ &gt;&gt; ITIS3135</h1>
+        <h1>Jessica Russ &hearts;&hearts; ITIS3135</h1>
     </header>
-    <!-- <nav>
-        <a href="index.html">Index</a>
-        ||
-        <a href="introduction.html">Introduction</a>
-        ||
-        <a href="contract.html">Contract</a>
-        ||
-        <a href="tables.html">Activity 2</a>
-        ||
-        <a href="forms.html">Activity 3</a>
-        ||
-        <a href="brand-jolly-reindeer.html">Activity 4</a>
-        ||
-        <a href="first-scripts.html">Activity 5</a>
-        ||
-        <a href="polygon-namer.html">Activity 6</a>
-        ||
-        <a href="calculator_try.html">Activity 7 Try</a>
-        ||
-        <a href="calculator_fcc.html">Activity 7</a>
-        ||
-        <a href="arrays.html">Activity 8</a>
-    </nav> -->
-    <div id="nav-placeholder">
-    </div>
-    
-    <script>
-        $(function(){
-          $("#nav-placeholder").load("navigation.html");
-        });
-        </script>
+
+    <nav id="topnav-placeholder">
+    </nav>
+
     <main>
         <h2>Activity 8</h2>
-        
-            <label for="days">Days:</label>
-            
-            <select id="days" name="days">
-                <option value="Monday">Monday</option>
-                <option value="Tuesday">Tuesday</option>
-                <option value="Wednesday">Wednesday</option>
-                <option value="Thursday">Thursday</option>
-                <option value="Friday">Friday</option>
-                <option value="Saturday">Saturday</option>
-                <option value="Sunday">Sunday</option>
-            </select><br>
-        
-            <label for="temperature">Temperature:</label>
-            <input type="number" id="temperature" required=""><br>
-        
-            <label></label>
-            <input type="button" id="add_temperature" value="Add Temperature">
-            <input type="button" id="display_results" value="Show Results">
-            <input type="button" id="display_temperature" value="Display Temperature"><br>
-        
-            <div id="results"></div>
-        
-            <table id="temperature_table"></table>
-            
+
+        <label for="days">Days:</label>
+
+        <select id="days" name="days">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+        </select><br>
+
+        <label for="temperature">Temperature:</label>
+        <input type="number" id="temperature" required=""><br>
+
+        <label></label>
+        <input type="button" id="add_temperature" value="Add Temperature">
+        <input type="button" id="display_results" value="Show Results">
+        <input type="button" id="display_temperature" value="Display Temperature"><br>
+
+        <div id="results"></div>
+
+        <table id="temperature_table"></table>
+
     </main>
 
 
-    <footer>
-
-        <nav>
-            <a href="http://webpages.uncc.edu/jruss8/" target="_blank">Charlotte.edu</a> ║
-            <a href="https://github.com/jessicaruss99" target="_blank">Github</a> ║
-            <a href="https://jessicaruss99.github.io/" target="_blank">Github.io</a> ║
-            <a href="https://jessicaruss99.github.io/itis3135/" target="_blank">ITIS 3135 Github Pages</a> ║
-            <a href="https://www.freecodecamp.org/jruss8" target="_blank">freeCodeCamp</a>
-        </nav>
-        <br>
-
-        <p>Page built by Jolly Reindeer Designs</p>
-
-        <a href="https://validator.w3.org/check?uri=referer">
-            <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
-        </a>
-
-        <a href="https://jigsaw.w3.org/css-validator/check/referer">
-            <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
-        </a>
+    <footer id="bottomnav-placeholder">
     </footer>
 
-   
+
 
 </body>
 

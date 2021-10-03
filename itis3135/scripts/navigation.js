@@ -1,7 +1,9 @@
 
-        $(function(){
-          $("#topnav-placeholder").load("topnavigation.html");
-        });
-        $(function(){
-            $("#bottomnav-placeholder").load("bottomnavigation.html");
-          });
+$(function () 
+{
+  $("#topnav-placeholder").load("topnavigation.html");
+});
+$(function () 
+{
+  $("#bottomnav-placeholder").load("bottomnavigation.html");
+});
