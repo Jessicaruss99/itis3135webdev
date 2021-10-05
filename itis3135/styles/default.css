@@ -210,13 +210,13 @@ tbody tr:nth-child(odd)
 .dropdown {
 	float: left;
 	overflow: hidden;
-	width: 250px; 
+	width: 350px; 
 	margin: 0 auto; 
   }
   
   /* Dropdown button */
   .dropdown .dropbtn {
-	font-size: 16px;
+	font-size: 26px;
 	border: none;
 	outline: none;
 	color: white;
