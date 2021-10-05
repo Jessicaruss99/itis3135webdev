@@ -202,6 +202,8 @@ tbody tr:nth-child(odd)
 	grid-column: -2;
 	grid-row: 2 / span 4;
   }
-  
+  p{
+	  font-size: xx-large;
+  }
 
 
