@@ -4,12 +4,13 @@ var temperature = [80,70];
 var $ = function (id) { return document.getElementById(id); };
 
 
-
 window.onload = function () {
+
     $("display_results").onclick = displayResults;
     $("add_temperature").onclick = addTemperature;
     $("display_temperature").onclick = displayTemperature;
     $("days").focus();
+    
 };
 
 function addTemperature(){
