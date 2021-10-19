@@ -203,20 +203,20 @@ tbody tr:nth-child(odd)
 	grid-column: -2;
 	grid-row: 2 / span 4;
   }
-  p{
+  /* p{
 	  font-size: xx-large;
-  }
+  } */
 /* The dropdown container */
 .dropdown {
 	float: left;
 	overflow: hidden;
-	width: 350px; 
+	width: 250px; 
 	margin: 0 auto; 
   }
   
   /* Dropdown button */
   .dropdown .dropbtn {
-	font-size: 26px;
+	font-size: 18px;
 	border: none;
 	outline: none;
 	color: white;
@@ -261,4 +261,28 @@ tbody tr:nth-child(odd)
   .dropdown:hover .dropdown-content {
 	display: block;
   }
+  .center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  }
+  #caption, #gallery {
+	text-align: center;
+}
 
+.bodyactivity9{
+	width: 420px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.activity9{
+	margin: 0;
+	padding: 0;
+}
+
+.liactivity9{
+	padding: 0 0.25em;
+	display: inline;
+}
