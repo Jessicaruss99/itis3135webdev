@@ -1,8 +1,8 @@
 body
 {
 	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	color: #6a994e ;
-	background-color: #bc4749;
+	color: #F4AC45 ;
+	background-color: #694A38;
 	margin-left: 75px;
 	margin-right: 75px;
 }
@@ -11,13 +11,13 @@ body
 header, footer
 {
 	text-align: center;
-	color: #a7c957;
+	color: #F4AC45;
 	font-weight: bold;
 }
 
 h1, h2, h3
 {
-	color: #6a994e;
+	color: #F4AC45;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	text-align: center;
 }
@@ -31,7 +31,7 @@ h3
 a
 {
 	text-decoration: none;
-	color:#f2e8cf;
+	color:ivory;
 }
 
 a:hover
@@ -229,7 +229,7 @@ tbody tr:nth-child(odd)
   
   /* Add a red background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
-	background-color: #31572c;
+	background-color: #F4AC45;
   }
   
   /* Dropdown content (hidden by default) */
@@ -254,7 +254,7 @@ tbody tr:nth-child(odd)
   
   /* Add a grey background color to dropdown links on hover */
   .dropdown-content a:hover {
-	background-color: #90a955;
+	background-color: #ddd;
   }
   
   /* Show the dropdown menu on hover */
